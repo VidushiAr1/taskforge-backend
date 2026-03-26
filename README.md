@@ -73,6 +73,9 @@ DELETE /api/v1/tasks/:id
 ## API Documentation
 Swagger available at:  
 http://localhost:5000/api/docs  
+To view:
+1. Run backend server using `npm run dev`
+2. Open the above URL in browser
 
 ---
 
