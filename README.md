@@ -68,7 +68,7 @@ DELETE /api/v1/tasks/:id
 
 ## 📄 API Documentation
 Swagger available at:  
-http://localhost:5000/api/docs
+[http://localhost:5000/api/docs](http://localhost:5000/api/docs/)
 
 ---
 
