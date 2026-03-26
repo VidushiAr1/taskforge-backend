@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: TaskForge API
+  version: 1.0.0
+  description: API documentation for TaskForge
+
+servers:
+  - url: http://localhost:5000/api/v1
+
+paths:
+  /auth/register:
+    post:
+      summary: Register user
+      responses:
+        "201":
+          description: User registered
+
+  /auth/login:
+    post:
+      summary: Login user
+      responses:
+        "200":
+          description: Login successful
+
+  /tasks:
+    get:
+      summary: Get all tasks
+      responses:
+        "200":
+          description: List of tasks
+
+    post:
+      summary: Create task
+      responses:
+        "201":
+          description: Task created
+
+  /tasks/{id}:
+    put:
+      summary: Update task
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Task updated
+
+    delete:
+      summary: Delete task
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Task deleted
